@@ -18,13 +18,16 @@ export function Counter() {
                     <button
                     aria-label="Increment value"
                     onClick={() => dispatch(increment())}
+                    className='btn btn-primary mb-2'
                     >
                     Increment
                     </button>
+                    &nbsp;&nbsp;&nbsp;
                     {/* <span>{count}</span> */}
                     <button
                     aria-label="Decrement value"
                     onClick={() => dispatch(decrement())}
+                    className='btn btn-primary mb-2'
                     >
                     Decrement
                     </button>
@@ -33,8 +36,10 @@ export function Counter() {
                         <input 
                         value={value}
 				        onChange={(event) => setValue(event.target.value)}
+                        
                         />
-                        <button onClick={()=>dispatch(changeTitle(value))}>change title</button>
+                        &nbsp;&nbsp;&nbsp;
+                        <button onClick={()=>dispatch(changeTitle(value))} className='btn btn-primary mb-2'>change title</button>
                     </div>
                 </div>
             </div>
